@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <!-- <script lang="javascript" type="text/javascript" src="4.js"></script> -->
+</head>
+<body>
+    <form name="form1">
+        <div align="center">
+            <p><h4>Задание 1:</h4></p>
+            <table border="0">
+                <tr>
+                    <th>Максимальное число: </div></th>
+                    <td><div align="center" id="t1"></div></td>
+                </tr>
+                <tr>
+                    <th>Кол-во повторений: </div></th>
+                    <td><div align="center" id="t2"></div></td>
+                </tr>
+            </table>
+            <input type="button" value="Ввод чисел" onclick="input(form1)">
+            <input type="button" value="Найти максимальное число среди введенных" onclick="f(form1)"><br>
+        </div>
+        <hr>
+        <div align="center">
+            <p><h4>Задание 2:</h4></p>
+            <input type="text" size="35" placeholder="Введите первую сторону треугольника" id="a"><br>
+            <input type="text" size="35" placeholder="Введите вторую сторону треугольника" id="b"><br>
+            <input type="text" size="35" placeholder="Введите третью сторону треугольника" id="c"><br>
+            Результат:<br>
+            <input type="text" size="35" value=" " name="resultat"><br>
+            <input type="button" value="Вычислить" onclick="treug(form1)"><input type="reset" value="Сброс">
+        </div>
+        <script src="4.js"></script>
+    </form>
+</body>

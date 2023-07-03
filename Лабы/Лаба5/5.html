@@ -1,0 +1,41 @@
+<!-- 
+1. Проверить примеры лабораторной работы.
+2. Написать сценарий выбора из трех изображений одного, которое
+вставляется ниже этих трех.
+3. Написать сценарий картинки с "эффектом приближения", т.е.
+увеличения размеров как реакция на попадание курсора мыши в поле
+рисунка (использовать свойства width и height).
+4. Написать сценарий графического горизонтального меню с
+появляющейся стрелкой над пунктом, у которого находится курсор. 
+-->
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="5.css">
+</head>
+
+<body>
+  <h4>Меню</h4>
+  <div class="menu">
+    <div class="mune_container">
+      <img class="image" id="image" src="images/pasta.jpg" onclick="newimg(1)">
+      <img id="arrow" class="arrow" src="images/arrow.jpg" />
+    </div>
+    <div class="mune_container">
+      <img class="image" id="image2" src="images/pizza.jpg" onclick="newimg(2)">
+      <img id="arrow2" class="arrow" src="images/arrow.jpg" />
+    </div>
+    <div class="mune_container">
+      <img class="image" id="image3" src="images/lasagna.jpg" onclick="newimg(3)">
+      <img id="arrow3" class="arrow" src="images/arrow.jpg" />
+    </div>
+  </div>
+  <img class="image-res" id="result" name="pic1">
+  <script src="5.js"></script>
+</body>
+
+</html>

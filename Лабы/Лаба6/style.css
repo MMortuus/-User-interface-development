@@ -1,0 +1,50 @@
+.text
+{
+    text-align: center;
+    display: flex;
+}
+.form1
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.form2
+{
+    display: flex;
+    justify-content: center;
+}
+.form3
+{
+    display: flex;
+    justify-content: center;
+}
+.line_pos
+{
+    display: flex;
+    justify-content: center;
+}
+.line
+{
+    margin-top: 50 px;
+    width: 500px;
+    border-bottom: 1px solid black;
+}
+.btns_pos
+{
+    display: inline;
+    margin: 30px;
+    justify-content: center;
+}
+.btns_size
+{
+    display: inline;
+    margin: 30px;
+    justify-content: center;
+}
+.fields
+{
+    display:inline-table;
+    margin: 10px auto;
+    justify-content: center;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Форма для заполнения</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="data">
+        <p>
+            Введите ваше имя<br>
+            <input placeholder="Имя"><br>
+        </p>
+        <p>
+            Введите ваш номер<br>
+            <input placeholder="Телефон"><br>
+        </p>
+        <p>
+            Введите вашу почту<br>
+            <input placeholder="Почта"><br>
+        </p>
+        Введите ваше сообщение<br>
+        <textarea></textarea>
+        <input type="submit" value="Отправить" id="btn">
+    </div>
+</body>
+<script>
+    let d = document.getElementById('data');
+    let btn = document.getElementById('btn');
+    btn.onclick = function ()
+    {
+        d.textContent = 'Спасибо, вскоре я с вами свяжусь)';
+        d.style.color = 'cyan';
+    }
+</script>
+
+</html>

@@ -1,0 +1,57 @@
+body
+{
+    background-image: url(images/background.jpg);
+}
+
+h1
+{
+    color: aqua;
+}
+
+#data
+{
+    margin-top: 30px;
+    margin: auto 0%;
+    justify-content: center;
+    color: magenta;
+}
+
+/* form[name="formrep"]
+{
+    justify-content: center;
+    display: flex;
+} */
+
+.reples
+{
+    text-align: center;
+    align-self: center;
+    display: block;
+    margin: 35px;
+    color: magenta;
+}
+
+.repam
+{
+    text-align: center;
+    align-self: center;
+    display: block;
+    margin: 35px;
+    color: magenta;
+}
+
+.repform
+{
+    text-align: center;
+    align-self: center;
+    display: block;
+    margin: 35px;
+    color: magenta;
+}
+.finres
+{
+    justify-content: center;
+    display: flex;
+    margin: 35px;
+    color: magenta;
+}

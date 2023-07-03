@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Репетитор</title>
+    <link rel="stylesheet" href="./Resume/style.css">
+</head>
+
+<body>
+    <form name="form1">
+        <div class="reples">
+            Выберите курс:<br>
+            <select name="sel" onChange="cost()">
+                <option name="c#" value=100>C#</option>
+                <option name="c++" value=200>C++</option>
+                <option name="htmljscss" value=175>Веб-разработка</option>
+            </select><br>
+        </div>
+        <div class="repam">
+            Укажите кол-во занятий в неделю:<br>
+            <input type="text" value="0" name="repamo" onChange="cost()">
+        </div>
+        <div class="repform">
+            Выберите предпочтительную форму занятий:<br>
+            <label>
+                <span>Очная:</span>
+                <input type="checkbox" value=10 name="repform1" onClick="cost()">
+            </label><br>
+            <label>
+                <span>Дистанционная:</span>
+                <input type="checkbox" value=15 name="repform2" onClick="cost()">
+            </label><br>
+            <input type="text" name="res"><br>
+        </div>
+    </form>
+</body>
+<script src="./script.js"></script>
+
+</html>
+<!-- !Выберите курс select
+!кол-во занятий в неделю
+!форма щанятий(очная, дистант) checkbox
+!от этого расчет производится -->

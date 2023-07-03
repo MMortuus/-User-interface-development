@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function S (obj) {
+                var ax = obj.ax.value;
+                var ay = obj.ax.value;
+                var bx = obj.bx.value;
+                var by = obj.by.value;
+                var cx = obj.cx.value;
+                var cy = obj.cy.value; 
+                var s = 0.5 * ( Math.abs( (ax - cx) * (by - cy) - ( bx - cx) * (ay - cy) ) );
+                obj.res.value = s;
+            }
+            function p(obj)
+            {
+                var x = parseInt(obj.x.value);
+                var y = parseInt(obj.y.value);
+                x = Math.pow(x,2);
+                y = Math.pow(y,2);
+                var z = Math.sqrt(x+y);
+                obj.resu.value=z;
+            }
+            function blurf(obj)
+            {
+                var temp = obj.a.value;
+                obj.a.value = obj.b.value;
+                obj.b.value = temp;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="form1">
+            Задание 1:
+            <p>A:  <input type="text" size="10" name="ax">,     <input type="text" size="10" name="ay"></p><hr>
+            <p>B:  <input type="text" size="10" name="bx">,     <input type="text" size="10" name="by"></p><hr>
+            <p>C:  <input type="text" size="10" name="cx">,     <input type="text" size="10" name="cy"></p><hr>
+            Результат:
+            <input type="text" name="res" size="10" onfocus="S(form1)"><br>
+            Задание 2:
+            <p>x: <input type="text" size="10" name="x" onselect="p(form1)"></p><hr>
+            <p>y: <input type="text" size="10" name="y" onselect="p(form1)"></p><hr>
+            Результат:
+            <input type="text" name="resu" value="Выделить" size="10" onselect="p(form1)"><br>
+            Задание 3:
+            <p><input type="text" name="a" size="10"><hr></p>
+            <p><input type="text" name="b" size="10" onblur="blurf(form1)"><hr></p>
+        </form>
+    </body>
+</html>

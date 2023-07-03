@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="line_pos" id="line">
+        <div class="line"></div>
+    </div>
+    <form name="form1" class="form1">
+        <div class="btns_pos">
+            <input type="radio" name="position" class="radio" id="radio_pos" onclick="line_move(1)">
+            <div class="text">Слева</div>
+        </div>
+        <div class="btns_pos">
+            <input type="radio" name="position" class="radio" id="radio_pos1" onclick="line_move(2)">
+            <div class="text">По центру</div>
+        </div>
+        <div class="btns_pos">
+            <input type="radio" name="position" class="radio" id="radio_pos2" onclick="line_move(3)">
+            <div class="text">Справа</div>
+        </div>
+    </form>
+    <form name="form2" class="form2">
+        <div class="btns_size">
+            <input type="radio" name="size" class="radio" id="radio_size" onclick="line_size(1)">
+            <div class="text">Тонкая</div>
+        </div>
+        <div class="btns_size">
+            <input type="radio" name="size" class="radio" id="radio_size1" onclick="line_size(2)">
+            <div class="text">Средняя</div>
+        </div>
+        <div class="btns_size">
+            <input type="radio" name="size" class="radio" id="radio_size2" onclick="line_size(3)">
+            <div class="text">Толстая</div>
+        </div>
+    </form>
+    <form name="form3">
+        <div class="fields">
+            <div class="text">Пол</div>
+            <input type="radio" name="field" class="field" id="in">М
+            <input type="radio" name="field" class="field" id="in">Ж
+        </div>
+        <div class="fields">
+            <div class="text">Возраст</div>
+            <input type="text" name="age" id="in1" onblur="txt()">
+            <div class="otv1" id="otv1"></div>
+        </div>
+        <div class="fields">
+            <div class="text">Фио</div>
+            <input type="text" name="fio" id="in2" onblur="txt1()">
+            <div class="otv2" id="otv2"></div>
+        </div>
+        <div class="fields">
+            <div class="text">Состоите в браке?</div>
+            <input type="radio" name="field" class="field" id="in3">Да
+            <input type="radio" name="field" class="field" id="in3">Нет
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
